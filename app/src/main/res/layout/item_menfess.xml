@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    app:cardBackgroundColor="@color/surface"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:strokeWidth="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="To: User"
+                android:textAppearance="?attr/textAppearanceTitleMedium"
+                android:textColor="@color/text_primary"
+                android:textSize="18sp" android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="From: Anonymous"
+                android:textSize="12sp"
+                android:textAppearance="?attr/textAppearanceBodySmall"
+                android:textColor="@color/text_secondary"
+                android:textStyle="italic" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="12dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dp"
+            android:text="Ini adalah isi pesannya yang mungkin bisa sangat panjang sekali agar terlihat bagus."
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDelete"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="Hapus"
+            android:textColor="@color/red_delete"
+            app:strokeColor="@color/red_delete" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEdit"
+            style="?attr/materialButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/primary"
+            android:text="Edit"
+            />
+    </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

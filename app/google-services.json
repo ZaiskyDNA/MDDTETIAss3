@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "430382454786",
+    "project_id": "minfest-335b4",
+    "storage_bucket": "minfest-335b4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430382454786:android:2c7cb6766ddcc6c5f02f1b",
+        "android_client_info": {
+          "package_name": "com.example.minfest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDc_SJO-_SIm4NvKmP1OM5ENA95EK9PFFs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

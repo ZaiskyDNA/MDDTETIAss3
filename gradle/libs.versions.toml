@@ -1,0 +1,62 @@
+# File: gradle/libs.versions.toml
+
+[versions]
+# Versi untuk Android Gradle Plugin dan Kotlin
+agp = "8.4.1" # Menyamakan versi dengan yang Anda coba tambahkan
+kotlin = "2.0.0" # Menggunakan versi kotlin yang lebih umum dan stabil
+coreKtx = "1.13.1" # Menyesuaikan versi core-ktx agar konsisten
+activityKtx = "1.9.0" # Menambahkan versi untuk activity-ktx
+lifecycle = "2.8.1" # Menambahkan versi untuk lifecycle
+
+# Versi untuk Library Testing
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+
+# Versi untuk Library UI & Lainnya
+appcompat = "1.7.1"
+material = "1.12.0"
+coroutines = "1.8.1"
+
+# Versi untuk Firebase & Hilt
+hilt = "2.51.1"
+firebaseBom = "33.1.0"
+googleServices = "4.4.2"
+activity = "1.10.1"
+constraintlayout = "2.2.1"
+
+[libraries]
+# AndroidX & UI
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "activityKtx" }
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycle" }
+
+# Testing
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+
+# Hilt (Dependency Injection)
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+
+# Firebase
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }
+firebase-firestore-ktx = { group = "com.google.firebase", name = "firebase-firestore-ktx" }
+
+# Coroutines
+kotlinx-coroutines-play-services = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-play-services", version.ref = "coroutines" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+
+[plugins]
+# Plugin untuk Android & Kotlin
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
+# Plugin untuk Hilt dan Google Services (Ini yang sebelumnya hilang)
+hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+google-services = { id = "com.google.gms.google-services", version.ref = "googleServices" }
